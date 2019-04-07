@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/downBorderImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftBorderImage"
+        app:srcCompat="@drawable/ic_divider_1" />
+
+    <ImageView
+        android:id="@+id/upBorderImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/leftBorderImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_divider_1" />
+
+    <ImageView
+        android:id="@+id/leftBorderImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/downBorderImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_divider_left" />
+
+    <ImageView
+        android:id="@+id/rightBorderImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/upBorderImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_divider_right" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/downBorderImage"
+        app:layout_constraintEnd_toEndOf="@+id/rightBorderImage"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/leftBorderImage" />
+
+
+    <ImageView
+        android:id="@+id/middleBorderImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/userList"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/ic_divider_1" />
+
+    <ImageView
+        android:id="@+id/firstPersonImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/firstCarrierImage"
+        app:layout_constraintEnd_toStartOf="@+id/thirdPersonImage"
+        app:layout_constraintStart_toEndOf="@+id/secondPersonImage"
+        app:srcCompat="@drawable/ic_1st_place_holder" />
+
+    <ImageView
+        android:id="@+id/secondPersonImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/secondCarrierImage"
+        app:layout_constraintEnd_toStartOf="@+id/firstPersonImage"
+        app:layout_constraintStart_toStartOf="@+id/middleBorderImage"
+        app:srcCompat="@drawable/ic_2nd_and_3rd_place_holder" />
+
+    <ImageView
+        android:id="@+id/thirdPersonImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdCarrierImage"
+        app:layout_constraintEnd_toEndOf="@+id/middleBorderImage"
+        app:layout_constraintStart_toEndOf="@+id/firstPersonImage"
+        app:srcCompat="@drawable/ic_2nd_and_3rd_place_holder" />
+
+    <ImageView
+        android:id="@+id/firstCarrierImage"
+        android:layout_width="110dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/middleBorderImage"
+        app:layout_constraintEnd_toStartOf="@+id/thirdCarrierImage"
+        app:layout_constraintStart_toEndOf="@+id/secondCarrierImage"
+        app:srcCompat="@drawable/ic_winnings_outline" />
+
+    <ImageView
+        android:id="@+id/secondCarrierImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/middleBorderImage"
+        app:layout_constraintEnd_toStartOf="@+id/firstCarrierImage"
+        app:layout_constraintStart_toStartOf="@+id/middleBorderImage"
+        app:layout_constraintTop_toBottomOf="@+id/firstPersonImage"
+        app:srcCompat="@drawable/ic_winnings_outline" />
+
+    <ImageView
+        android:id="@+id/thirdCarrierImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/middleBorderImage"
+        app:layout_constraintEnd_toEndOf="@+id/middleBorderImage"
+        app:layout_constraintStart_toEndOf="@+id/firstCarrierImage"
+        app:layout_constraintTop_toBottomOf="@+id/firstPersonImage"
+        app:srcCompat="@drawable/ic_winnings_outline" />
+
+    <ImageView
+        android:id="@+id/scoresTitle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title" />
+
+    <Button
+        android:id="@+id/thisWeekButton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/this_week"
+        android:text="This week"
+        app:layout_constraintBottom_toTopOf="@+id/firstPersonImage"
+        app:layout_constraintEnd_toStartOf="@+id/allTimeButton"
+        app:layout_constraintStart_toEndOf="@+id/scoresTitle"
+        app:layout_constraintTop_toBottomOf="@+id/upBorderImage" />
+
+    <Button
+        android:id="@+id/allTimeButton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/this_week"
+        android:text="All time"
+        app:layout_constraintBottom_toTopOf="@+id/firstPersonImage"
+        app:layout_constraintEnd_toEndOf="@+id/middleBorderImage"
+        app:layout_constraintStart_toEndOf="@+id/thisWeekButton"
+        app:layout_constraintTop_toBottomOf="@+id/upBorderImage"
+
+        />
+
+    <TextView
+        android:id="@+id/bdt2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="BDT"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondCarrierImage"
+        app:layout_constraintEnd_toStartOf="@+id/secondAmountText"
+        app:layout_constraintStart_toStartOf="@+id/secondCarrierImage"
+        app:layout_constraintTop_toTopOf="@+id/secondCarrierImage" />
+
+    <TextView
+        android:id="@+id/secondAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/secondCarrierImage"
+        app:layout_constraintEnd_toEndOf="@+id/secondCarrierImage"
+        app:layout_constraintStart_toEndOf="@+id/bdt2Text"
+        app:layout_constraintTop_toTopOf="@+id/secondCarrierImage" />
+
+    <TextView
+        android:id="@+id/bdt1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="BDT"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstCarrierImage"
+        app:layout_constraintEnd_toStartOf="@+id/firstAmountText"
+        app:layout_constraintStart_toStartOf="@+id/firstCarrierImage"
+        app:layout_constraintTop_toTopOf="@+id/firstCarrierImage" />
+
+    <TextView
+        android:id="@+id/firstAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/firstCarrierImage"
+        app:layout_constraintEnd_toEndOf="@+id/firstCarrierImage"
+        app:layout_constraintStart_toEndOf="@+id/bdt1Text"
+        app:layout_constraintTop_toTopOf="@+id/firstCarrierImage" />
+
+    <TextView
+        android:id="@+id/bdt3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="BDT"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdCarrierImage"
+        app:layout_constraintEnd_toStartOf="@+id/thirdAmountText"
+        app:layout_constraintStart_toStartOf="@+id/thirdCarrierImage"
+        app:layout_constraintTop_toTopOf="@+id/thirdCarrierImage" />
+
+    <TextView
+        android:id="@+id/thirdAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdCarrierImage"
+        app:layout_constraintEnd_toEndOf="@+id/thirdCarrierImage"
+        app:layout_constraintStart_toEndOf="@+id/bdt3Text"
+        app:layout_constraintTop_toTopOf="@+id/thirdCarrierImage" />
+
+</android.support.constraint.ConstraintLayout>

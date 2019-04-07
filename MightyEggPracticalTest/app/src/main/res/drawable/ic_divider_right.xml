@@ -1,0 +1,16 @@
+<vector android:height="1500dp" android:viewportHeight="3"
+    android:viewportWidth="500" android:width="10dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000"
+        android:pathData="M0,1.5L500,1.5" android:strokeWidth="10">
+        <aapt:attr name="android:strokeColor">
+            <gradient android:endX="500" android:endY="1.5"
+                android:startX="0" android:startY="1.5" android:type="linear">
+
+                <item android:color="#FFFFFF33" android:offset="1"/>
+                <item android:color="#FFFFDA42" android:offset="0.9179"/>
+
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>
